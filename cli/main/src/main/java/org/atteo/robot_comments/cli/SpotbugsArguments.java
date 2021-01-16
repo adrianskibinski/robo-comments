@@ -13,7 +13,7 @@ import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.Parameters;
 
-@Parameters(commandNames = "spotbugs", commandDescription = "Imports SpotBugs issues")
+@Parameters(commandNames = "spotbugs", commandDescription = "Translate SpotBugs issues file")
 public class SpotbugsArguments implements Plugin {
     @Parameter(names = { "-i", "--input-file" }, description = "Input file")
     private String inputFile = "target/spotbugsXml.xml";

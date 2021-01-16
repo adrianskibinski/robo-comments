@@ -12,9 +12,9 @@ import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.Parameters;
 
-@Parameters(commandNames = "gerrit", commandDescription = "Upload/Downloads comments to/from Gerrit")
+@Parameters(commandNames = "gerrit", commandDescription = "Transfer comments to/from Gerrit")
 public class GerritArguments implements Plugin {
-    @Parameter(names = { "-g", "--gerrit-url" }, description = "URL to the Gerrit instance", required = true)
+    @Parameter(names = { "-g", "--url" }, description = "URL to the Gerrit instance", required = true)
     private String gerritUrl;
 
     @Parameter(names = { "-u", "--user"}, description = "Gerrit user")

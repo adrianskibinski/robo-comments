@@ -12,9 +12,9 @@ import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.Parameters;
 
-@Parameters(commandNames = "grep", commandDescription = "Filters comments which contain given pattern")
+@Parameters(commandNames = "grep", commandDescription = "Filter comments which contain given pattern")
 public class Grep implements Plugin {
-    @Parameter(description = "regular expression to filter by", required = true)
+    @Parameter(description = "[regular expression]", required = true)
     private String pattern;
 
     @Override

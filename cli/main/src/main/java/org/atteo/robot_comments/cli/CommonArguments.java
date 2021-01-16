@@ -9,7 +9,7 @@ public class CommonArguments {
     @Parameter(names = { "-o", "--output-file"}, description = "Output file, if omitted standard output is used")
     private String outputFile;
 
-    @Parameter(names = { "-h", "--help"}, help = true, description = "Output file, if omitted standard output is used")
+    @Parameter(names = { "-h", "--help"}, help = true, hidden = true)
     private boolean help = false;
 
     public boolean isHelp() {
